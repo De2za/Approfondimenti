@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Approfondimenti.iml" filepath="$PROJECT_DIR$/.idea/Approfondimenti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/repo-merge-issuies-TDD.iml" filepath="$PROJECT_DIR$/.idea/repo-merge-issuies-TDD.iml" />
     </modules>
   </component>
 </project>
