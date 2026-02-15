@@ -15,11 +15,4 @@ public class Calcolatrice {
         }
         return Math.sqrt(x);
     }
-
-    public double sum(double a, double b) throws ArithmeticException {
-        if (b == integer.MAX_VALUE ) {
-            throw new ArithmeticException("Divisione per zero");
-        }
-        return a + b;
-    }
 }
