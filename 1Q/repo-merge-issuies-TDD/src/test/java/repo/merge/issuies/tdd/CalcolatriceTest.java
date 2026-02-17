@@ -1,4 +1,7 @@
-import Exeptions.NumeroNegativoExeption;
+package repo.merge.issuies.tdd;
+
+import repo.merge.issuies.tdd.Exeptions.NumeroNegativoExeption;
+import repo.merge.issuies.tdd.Calcolatrice;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

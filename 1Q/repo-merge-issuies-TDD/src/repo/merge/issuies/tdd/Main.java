@@ -1,4 +1,7 @@
+package repo.merge.issuies.tdd;
+
 import java.util.Scanner;
+import repo.merge.issuies.tdd.SessioneCalcolo;
 
 public class Main {
 

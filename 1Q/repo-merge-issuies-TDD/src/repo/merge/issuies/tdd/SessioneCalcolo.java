@@ -1,4 +1,6 @@
-import Exeptions.NumeroNegativoExeption;
+package repo.merge.issuies.tdd;
+
+import repo.merge.issuies.tdd.Exeptions.NumeroNegativoExeption;
 
 import java.util.ArrayList;
 import java.util.List;
