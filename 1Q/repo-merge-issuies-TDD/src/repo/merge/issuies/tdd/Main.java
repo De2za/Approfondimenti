@@ -33,8 +33,25 @@ public class Main {
         System.out.println("inserisci numero: ");
         n6 = sc.nextDouble();
 
+        double n7, n8, n9, n10, n11, n12;
 
+        System.out.println("PRIMA SOMMA: ");
+        System.out.println("inserisci numero uno: ");
+        n7 = sc.nextDouble();
+        System.out.println("inserisci numero due: ");
+        n8 = sc.nextDouble();
 
+        System.out.println("PRIMA SOTTRAZIONE: ");
+        System.out.println("inserisci numero uno: ");
+        n9 = sc.nextDouble();
+        System.out.println("inserisci numero due: ");
+        n10 = sc.nextDouble();
+
+        System.out.println("PRIMA MOLTIPLICAZIONE: ");
+        System.out.println("inserisci numero uno: ");
+        n11 = sc.nextDouble();
+        System.out.println("inserisci numero due: ");
+        n12 = sc.nextDouble();
 
 
         sessione.eseguiDivisione( n1, n2);
@@ -43,6 +60,10 @@ public class Main {
 
         sessione.computeSqrt(n5);
         sessione.computeSqrt(n6);
+
+        sessione.eseguiSomma(n7, n8);
+        sessione.eseguiSottrazione(n9, n10);
+        sessione.eseguiMoltiplicazione(n11, n12);
 
 
         System.out.println("Storico operazioni:");
