@@ -50,4 +50,32 @@ public class SessioneCalcoloTest {
         SessioneCalcolo session = new SessioneCalcolo();
         assertTrue(session.getStorico().isEmpty());
     }
+
+    @Test
+    void eseguiSomma_shouldAddResultToStorico() {
+        SessioneCalcolo session = new SessioneCalcolo();
+        session.eseguiSomma(5.0, 3.0);
+        List storico = session.getStorico();
+        assertEquals(1, storico.size());
+        assertTrue(storico.get(0).toString().contains("Somma: 5.0 + 3.0 = 8.0"));
+    }
+
+    @Test
+    void eseguiSottrazione_shouldAddResultToStorico() {
+        SessioneCalcolo session = new SessioneCalcolo();
+        session.eseguiSottrazione(10.0, 4.0);
+        List storico = session.getStorico();
+        assertEquals(1, storico.size());
+        assertTrue(storico.get(0).toString().contains("Sottrazione: 10.0 - 4.0 = 6.0"));
+    }
+
+    @Test
+    void eseguiMoltiplicazione_shouldAddResultToStorico() {
+        SessioneCalcolo session = new SessioneCalcolo();
+        session.eseguiMoltiplicazione(2.0, 6.0);
+        List storico = session.getStorico();
+        assertEquals(1, storico.size());
+        assertTrue(storico.get(0).toString().contains("Moltiplicazione: 2.0 * 6.0 = 12.0"));
+    }
 }
+

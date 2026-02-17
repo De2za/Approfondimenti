@@ -36,4 +36,19 @@ public class SessioneCalcolo {
     public List getStorico() {
         return storico;
     }
+
+    public void eseguiSomma(double a, double b) {
+        double risultato = calc.add(a, b);
+        storico.add("Somma: " + a + " + " + b + " = " + risultato);
+    }
+
+    public void eseguiSottrazione(double a, double b) {
+        double risultato = calc.subtract(a, b);
+        storico.add("Sottrazione: " + a + " - " + b + " = " + risultato);
+    }
+
+    public void eseguiMoltiplicazione(double a, double b) {
+        double risultato = calc.multiply(a, b);
+        storico.add("Moltiplicazione: " + a + " * " + b + " = " + risultato);
+    }
 }

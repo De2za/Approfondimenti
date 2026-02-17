@@ -30,4 +30,26 @@ public class CalcolatriceTest {
         Calcolatrice calculator = new Calcolatrice();
         assertThrows(NumeroNegativoExeption.class, () -> calculator.sqrt(-1.0));
     }
+
+    @Test
+    void add_shouldReturnCorrectResult() {
+        Calcolatrice calculator = new Calcolatrice();
+        assertEquals(5.0, calculator.add(2.0, 3.0));
+        assertEquals(-1.0, calculator.add(2.0, -3.0));
+    }
+
+    @Test
+    void subtract_shouldReturnCorrectResult() {
+        Calcolatrice calculator = new Calcolatrice();
+        assertEquals(1.0, calculator.subtract(3.0, 2.0));
+        assertEquals(5.0, calculator.subtract(2.0, -3.0));
+    }
+
+    @Test
+    void multiply_shouldReturnCorrectResult() {
+        Calcolatrice calculator = new Calcolatrice();
+        assertEquals(6.0, calculator.multiply(2.0, 3.0));
+        assertEquals(-6.0, calculator.multiply(2.0, -3.0));
+        assertEquals(0.0, calculator.multiply(0.0, 5.0));
+    }
 }
